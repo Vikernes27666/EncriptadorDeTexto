@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F3F5FC;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.full-screen {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: absolute;
+  top: -50px; /* Ajusta la posición vertical según sea necesario */
+  left: 5%; /* Centra horizontalmente */
+  transform: translateX(-50%);
+  padding: 10px; /* Añade padding alrededor del logo */
+}
+
+
+.logo-text {
+  font-size: 50px; /* Ajusta el tamaño según sea necesario */
+  color: #072B61;
+  font-family: 'Arial Black', sans-serif; /* Fuente similar a un logo */
+}
+
+.input-section {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: calc(100% - 40px); /* Ajusta la altura para que no choque con el contenedor de la imagen */
+  position: relative;
+}
+
+textarea {
+  width: 100%;
+  height: calc(100% - 80px); /* Ajusta la altura para que no choque con los botones */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  resize: none;
+  box-sizing: border-box;
+  background-color: transparent; /* Fondo transparente */
+}
+
+.buttons {
+  margin-top: auto; /* Coloca los botones al final del contenedor */
+  margin-bottom: 20px; /* Espacio entre los botones y el contenedor */
+}
+
+button {
+  background-color: #072B61; /* Color para el botón de encriptar */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button#decrypt-btn {
+  background-color: #6c757d;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 40px); /* Ajusta la altura para que coincida con la altura del textarea */
+  box-sizing: border-box;
+}
+
+.output-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.output-section img {
+  width: 200px; /* Aumenta el tamaño de la imagen */
+  margin-bottom: 20px;
+}
+
+.output-section p {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+}
+
+#instruction-message {
+  font-size: 14px;
+  color: #333;
+}
+
